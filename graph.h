@@ -8,8 +8,8 @@ typedef struct graph{
 	int v;
 	listptr *nodes;
 }graph;
-void put_graph(graph*);
-void get_graph(graph);
+void input_graph(graph*);//get graph input from user and sace in graph
+void print_graph(graph);//get from structure and put on standard output
 void del_graph(graph*);
 int bfs(graph);
 int dfs(graph);
