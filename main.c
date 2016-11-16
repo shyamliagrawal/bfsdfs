@@ -1,8 +1,8 @@
 #include"graph.h"
 int main() {
 	graph g;
-	put_graph(&g);
-	get_graph(g);
+	input_graph(&g);
+	print_graph(g);
 	printf("\nBreadth First Search : \n");
 	bfs(g);
 	printf("\n\nDepth First Search : \n");
