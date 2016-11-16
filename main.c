@@ -8,7 +8,6 @@ int main() {
 	printf("\n\nDepth First Search : \n");
 	dfs(g);
 	putchar('\n');
-	putchar('\n');
 	del_graph(&g);
 	return 0;
 }
