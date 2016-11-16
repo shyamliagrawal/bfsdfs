@@ -5,7 +5,7 @@
 #define MALLOC(p,s)	p = malloc(s); if(p == NULL) {perror("malloc"); exit(1);}
 #define YES 1
 #define NO 2
-void put_graph(graph *gptr) {	
+void input_graph(graph *gptr) {	
 	int n ,a, b, i;	
 	printf("Number of vertices : ");
 	scanf("%d", &gptr->v);
@@ -14,7 +14,7 @@ void put_graph(graph *gptr) {
 		gptr->nodes[i] = NULL;	
 	printf("Enter number of edges : ");
 	scanf("%d", &n);
-	printf("Enter the edges in format : node1-node2\n");
+	printf("Enter the edges in format : node1 node2\n");
 	listptr ap, bp;
 	for(i = 0; i < n; i++) {
 		scanf("%d%d", &a, &b);
@@ -30,7 +30,7 @@ void put_graph(graph *gptr) {
 		gptr->nodes[b] = bp;
 	}
 }
-void get_graph(graph g) {
+void print_graph(graph g) {
 	int i;
 	printf("Number of vertices : %d\nAdjancy List : \n", g.v);
 	listptr temp; 	
